@@ -2,7 +2,7 @@
 
 In this project I have aimed to learn usage of **React's** props and state along with Stateless Functional Components and Class Components
 
-##____________
+## ____________
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
