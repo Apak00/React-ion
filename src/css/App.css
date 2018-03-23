@@ -1,0 +1,206 @@
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.Wrapper {
+}
+.Tables {
+    height: 90vh;
+}
+.FeedElement {
+    padding: 6px;
+    height: 13vh;
+    font-family: "Arial","sans-serif";
+    font-size: 12px;
+    font-weight: 600;
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    border-radius: 6px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 4px;
+}
+.MemberList {
+    padding: 4px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    font-size: 18px;
+}
+.memberListMember {
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    border-radius: 6px;
+    margin-bottom: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+
+}
+.memberListMembers {
+    max-height: 80vh;
+    overflow: auto;
+}
+.ExpenseTable {
+    font-weight: 800;
+    font-size: 18px;
+    padding: 4px;
+    overflow: auto;
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+}
+
+.primaryButton {
+    height: 10vh;
+    width: 100%;
+}
+
+/*Modal*/
+.modalBackG {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .65);
+}
+.modalContent{
+    font-size: 12px;
+    position: fixed;
+    margin: auto;
+    width: 80%;
+    height: 330px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    overflow: auto;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+}
+
+.modalContent:after {
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+}
+.inputField {
+    width: 75%;
+    float: right;
+    line-height: 24px;
+    padding: 0 0 0 4px;
+}
+.inputField.currency {
+    width: 50%;
+}
+.txtAlignRight {
+    text-align: right;
+}
+label {
+    line-height: 24px;
+    width: 100%;
+}
+.currencyLabel {
+    height: 28px;
+    width: 50%;
+}
+
+
+/*Switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #3af355;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #3af355;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.modalAddButton {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+}
+.expenseMemberModal {
+    margin-left: 10px;
+    border: 2px solid #cccccc;
+    background-color: #cdcdcd;
+    border-radius: 6px;
+    width: calc(20% - 4px);
+    text-align: center;
+}
+.membersFieldSet span,legend {
+    margin: 0 4px 0 4px;
+}
+.membersFieldSet {
+    margin: 10px -4px 0 -4px;
+}
+
+.plusMember {
+    flex:1;
+}
+.plusMember {
+    border: 2px dashed gray;
+    border-radius: 8px;
+    position: relative;
+    font-size: 32px;
+    text-align: center;
+    color: #217e32;
+}
+
